@@ -4,7 +4,6 @@
 Export/
 ndll/*/lime*
 ndll/*/liblime*
-ndll/*/*.hdll
 ndll/*/*.hash
 ndll/*/*.so
 ndll/*/*.dylib
