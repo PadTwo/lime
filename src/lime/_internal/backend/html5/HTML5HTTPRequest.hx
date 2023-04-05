@@ -426,10 +426,10 @@ class HTML5HTTPRequest
 				processResponse();
 				promise.complete(bytes);
 			}
-			else if(request.responseText != null && request.responseText.length > 0)
+			else if(request.response != null && request.response.length > 0)
 			{
 				processResponse();
-				promise.error(request.responseText);
+				promise.error(request.response);
 			}
 			else
 			{
@@ -544,10 +544,10 @@ class HTML5HTTPRequest
 				processResponse();
 				promise.complete(request.responseText);
 			}
-			else if(request.responseText != null && request.responseText.length > 0)
+			else if(request.response != null && request.response.length > 0)
 			{
 				processResponse();
-				promise.error(request.responseText);
+				promise.error(request.response);
 			}
 			else
 			{
